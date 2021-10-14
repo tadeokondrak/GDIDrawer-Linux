@@ -124,7 +124,7 @@ namespace GDIDrawer {
         public Color GetBBPixel(Point point) {
             Color color = Color.Black;
             Application.RunBlocking(() => {
-                underlay.GetPixel(point.X, point.Y);
+                color = underlay.GetPixel(point.X, point.Y);
             });
             return color;
         }

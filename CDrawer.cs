@@ -163,7 +163,7 @@ namespace GDIDrawer {
             MouseMoveScaled?.Invoke(scaledPoint, this);
             lastMousePosition = point;
             lastMousePositionFresh = false;
-            lastMousePosition = scaledPoint;
+            lastMousePositionScaled = scaledPoint;
             lastMousePositionScaledFresh = false;
         }
 

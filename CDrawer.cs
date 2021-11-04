@@ -212,6 +212,7 @@ namespace GDIDrawer {
         }
 
         public void Clear() {
+            dirty = true;
             lock (shapes)
                 shapes.Clear();
         }
